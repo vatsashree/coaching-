@@ -1,0 +1,673 @@
+/* Styles for the page body */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f8f8f8;
+    padding: 30px;
+  }
+  
+  /* Styles for the page header */
+  h1 {
+    font-size: 48px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Styles for the file upload form */
+  #upload-form {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #file-input {
+    margin-right: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #file-input:hover {
+    background-color: #ff8c66;
+  }
+  
+  #file-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ff8c66;
+  }
+  
+  button[type="submit"] {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #555;
+  }
+  
+  /* Styles for the uploaded file list */
+  #file-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #file-list li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  #file-list li:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #file-list a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #file-list a:hover {
+    background-color: #eee;
+  }
+  
+  #file-list img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  /* Chat box styles */
+ #chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: show;
+  } 
+  
+  #chat-box h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+  } 
+  
+  #chat-form {
+    display: flex;
+  }
+  
+  #chat-input {
+    flex-grow: 1;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  #chat-send-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #chat-send-btn:hover {
+    background-color: #ff8c66;
+  }
+  
+  #chat-send-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ff8c66;
+  }
+  
+  #chat-messages {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  #chat-messages li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+  }
+  /* Quiz form styles */
+
+#quiz-form {
+    margin-bottom: 2rem;
+  }
+  
+  #quiz-form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  #quiz-form input[type="text"],
+  #quiz-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  #quiz-form input[type="file"] {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  #quiz-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #quiz-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Quiz list styles */
+  
+  #quiz-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2rem;
+  }
+  
+  #quiz-list li {
+    margin-bottom: 1rem;
+  }
+  
+  #quiz-list a {
+    display: block;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    color: #444;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #quiz-list a:hover {
+    background-color: #e0e0e0;
+  }
+  /* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styles */
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #444;
+  }
+  
+  header a {
+    display: inline-block;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  header a:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Quiz form styles */
+  
+  #quiz-form {
+    margin-bottom: 2rem;
+  }
+  
+  #quiz-form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  #quiz-form input[type="text"],
+  #quiz-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  #quiz-form input[type="file"] {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  #quiz-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #quiz-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Quiz list styles */
+  
+  #quiz-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2rem;
+  }
+  
+  #quiz-list li {
+    margin-bottom: 1rem;
+  }
+  
+  #quiz-list a {
+    display: block;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    color: #444;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #quiz-list a:hover {
+    background-color: #e0e0e0;
+  }
+  /* Set the video container to fill the entire screen */
+#zmmtg-root {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* Hide the Zoom logo */
+  .zm-logo img {
+    display: none;
+  }
+  
+  /* Style the video tiles */
+  .video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .video-list__item {
+    width: 25%;
+    height: 25%;
+    margin: 0.5%;
+    position: relative;
+  }
+  
+  .video-list__item .video-view {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .video-list__item .display-name {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+  }
+  
+  /* Style the controls bar */
+  #zmmtg-bottom-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+  }
+  
+  #zmmtg-bottom-toolbar .btn {
+    margin: 0 10px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #zmmtg-bottom-toolbar .btn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* Style the chat window */
+  #chat-dialog {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 20%;
+    height: 50%;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  #chat-dialog .chat-header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #chat-dialog .chat-header h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  #chat-dialog .chat-header button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #chat-dialog .chat-header button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  #chat-dialog .chat-messages {
+    height: 80%;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  
+  #chat-dialog .chat-message {
+    margin-bottom: 10px;
+  }
+  
+  #chat-dialog .chat-message p {
+    margin: 0;
+  }
+  
+  #chat-dialog .chat-message .message-time {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+  }
+  
+  #chat-dialog .chat-input {
+    padding: 10px;
+  }
+  
+  #chat-dialog .chat-input input {
+    width: 100%;
+    padding: 5px;
+  }  
+  /* Style the Zoom meeting icon */
+.fa-video {
+    margin-left: 5px;
+  }
+  
+  /* Style the icon on hover */
+  a:hover .fa-video {
+    animation: rotate 1s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #f6f5f7;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .form-container h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .form-container input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+  }
+  
+  .form-container button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .ghost {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  .overlay-container {
+    position: absolute;
+    top: 0;
+    left:0%;
+  }
+  
+  /* set background color and font family for the entire page */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* style the container for the login form */
+  .container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 100px auto;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* style the form elements */
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  /* style the error message */
+  #error-msg {
+    color: #f00;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  /* style the login button */
+  #login-btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  #login-btn:hover {
+    background-color: #0069d9;
+  }
+  

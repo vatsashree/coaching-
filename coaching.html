@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="coaching.css">
+    <title>PDF Uploader</title>
+  </head>
+  <body>
+    <h1>PDF Uploader</h1>
+    <form id="upload-form">
+      <input type="file" id="file-input" accept=".pdf">
+      <button type="submit">Upload</button>
+    </form>
+    <ul id="file-list"></ul>
+    <script src="coaching.js"></script>
+    <!-- Chat box -->
+<div id="chat-box">
+    <h2>Ask a question</h2>
+    <form id="chat-form">
+      <input type="text" id="chat-input" placeholder="Type your question here">
+      <button type="submit" id="chat-send-btn">Send</button>
+    </form>
+    <ul id="chat-messages"></ul>
+  </div>
+  <!-- Quiz form -->
+<form id="quiz-form">
+    <label for="quiz-title">Quiz Title</label>
+    <input type="text" id="quiz-title" name="quizTitle" required>
+    <label for="quiz-description">Quiz Description</label>
+    <textarea id="quiz-description" name="quizDescription" rows="3"></textarea>
+    <label for="quiz-file">Quiz File (PDF)</label>
+    <input type="file" id="quiz-file" name="quizFile" accept="application/pdf" required>
+    <button type="submit">Post Quiz</button>
+  </form>
+  
+  <!-- Quiz list -->
+  <ul id="quiz-list"></ul>
+  <div class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Quizzes</a></li>
+      <li><a href="#">Chat</a></li>
+      <li><a href="https://zoom.us/join">Join Meeting <i class="fas fa-video"></i></a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>Welcome to My Coaching Web-App</h1>
+    <form id="login-form">
+      <label for="login-email">Email:</label>
+      <input type="email" id="login-email" name="login-email" required>
+      <label for="login-password">Password:</label>
+      <input type="password" id="login-password" name="login-password" required>
+        <p id="error-msg"></p>
+        <button id="login-btn">Login</button>
+      </form>
+    </div>
+    <script src="coaching.js"></script>
+  
+ 
+    
+ 
+  
+  
+  
+  </body>
+</html>
